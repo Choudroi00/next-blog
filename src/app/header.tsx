@@ -31,6 +31,9 @@ export default function Header({navs}: Props) {
         <div className={"py-3 flex flex-row justify-center"} >
               <div className="w-full xl:w-[1280px] flex flex-row items-center" >
                 <img height={50} src="https://res.cloudinary.com/dqtlhm4to/image/upload/v1718314738/fre5teegghvhzqbj1sce.png" className="w-[70px] xl:w-[70px] h-[50px] mx-4 xl:mx-6 bg-cover bg-no-repeat  "/>
+                <div className="flex sm:hidden flex-1 flex-col justify-center text-2xl text-white font-semibold" >
+                    PodBrand
+                </div>   
                 <nav className="hidden sm:flex  flex-1">
                     {
                         navs.map((item,index)=>{
