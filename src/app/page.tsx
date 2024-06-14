@@ -19,7 +19,8 @@ import { CiAt, CiFacebook, CiLinkedin } from "react-icons/ci";
 import { SiGmail } from "react-icons/si";
 import { RiFacebookFill, RiLinkedinBoxFill, RiLinkedinFill } from "react-icons/ri";
 import { IoGitNetworkOutline } from "react-icons/io5";
-
+import * as React from "react";
+import {CSSProperties, useEffect, useState} from "react";
 
 export default function Home() {
 
