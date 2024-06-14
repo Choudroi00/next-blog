@@ -2,6 +2,7 @@ import Image from "next/image";
 import Header from "./header";
 import { BiRightArrow } from "react-icons/bi";
 import { AiOutlineArrowRight } from "react-icons/ai";
+import { LuMapPin } from "react-icons/lu";
 import {
   GoArrowDownRight,
   GoArrowRight,
@@ -198,6 +199,11 @@ export default function Home() {
                 <CiAt className={"transition ease-in text-black  hover:text-blue-500 text-xl mx-3"} />
                 0794481501
               </div>
+              <div className="flex mb-3 flex-row items-center justify-start text-slate-800 font-medium" >
+                <LuMapPin className={"transition ease-in text-black  hover:text-blue-500 text-xl mx-3"} />
+                salamandre- Mostaganem
+              </div>
+
 
               
             </div>
