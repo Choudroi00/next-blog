@@ -21,7 +21,7 @@ import { SiGmail } from "react-icons/si";
 import { RiFacebookFill, RiLinkedinBoxFill, RiLinkedinFill } from "react-icons/ri";
 import { IoGitNetworkOutline } from "react-icons/io5";
 import * as React from "react";
-import {CSSProperties, useEffect, useState} from "react";
+import { CSSProperties, useEffect, useState } from "react";
 
 export default function Home() {
 
@@ -49,19 +49,19 @@ export default function Home() {
     },
   ]
 
-  const ConnectInput :React.FC<{label:string,placeholder:string,type?:string,onChange:string,containerStyle?:CSSProperties}> = ({label,placeholder,type,containerStyle})=>{
-        return (
-            <div className={"flex flex-col "} style={containerStyle}  >
-                <div className={"flex flex-row-reverse justify-start text-left text-black text-lg font-medium mb-1"} >
-                    : {label} 
-                </div>
-                <div className={"flex flex-row justify-start flex-1"} >
-                    <input autoComplete={"off"} autoCorrect={"off"}   type={type}  className={"flex-1 text-left px-5 py-3.5 text-sm font-medium text-left  text-black outline-none rounded-xl bg-slate-100  transition-all ease-in focus:ring-2 focus:ring-slate-200 focus:border  placeholder-slate-600"} placeholder={placeholder} />
-                </div>
+  const ConnectInput: React.FC<{ label: string, placeholder: string, type?: string, onChange: string, containerStyle?: CSSProperties }> = ({ label, placeholder, type, containerStyle }) => {
+    return (
+      <div className={"flex flex-col w-full"} style={containerStyle}  >
+        <div className={"flex flex-row-reverse justify-start text-left text-black text-lg font-medium mb-1"} >
+          : {label}
+        </div>
+        <div className={"flex flex-row justify-start w-full"} >
+          <input autoComplete={"off"} autoCorrect={"off"} type={type} className={"w-full text-left px-5 py-3.5 text-sm font-medium text-left  text-black outline-none rounded-xl bg-slate-100  transition-all ease-in focus:ring-2 focus:ring-slate-200 focus:border  placeholder-slate-600"} placeholder={placeholder} />
+        </div>
 
-            </div>
-        )
-    }
+      </div>
+    )
+  }
 
   return (
     <div className="flex flex-col items-center justify-between overflow-auto " >
@@ -147,26 +147,26 @@ export default function Home() {
             <ul className="text-xl">
               <li className="mb-4 flex flex-row justify-end text-left items-center ">
 
-الملف الشخصي 
+                الملف الشخصي
               </li>
               <li className="mb-4 flex flex-row-reverse justify-start items-center ">
 
-              اسم المؤسسة 
+                اسم المؤسسة
               </li>
               <li className="mb-4 flex flex-row-reverse justify-start items-center ">
 
-              طبيعة النشاط
+                طبيعة النشاط
 
               </li>
               <li className="mb-4 flex flex-row-reverse justify-start items-center ">
 
-              البريد الإلكتروني
+                البريد الإلكتروني
               </li>
               <li className="mb-4 flex flex-row-reverse justify-start items-center ">
 
-              كلمة المرور
+                كلمة المرور
               </li>
-              
+
 
             </ul>
           </div>
@@ -175,7 +175,7 @@ export default function Home() {
 
       {/* --- END HOW TO START --- */}
       <section className="py-20 w-full flex flex-row justify-center" >
-        <div className="p-12 min-w-[400px] rounded-2xl bg-white shadow md:shadow-2xl flex flex-col items-center justify-center" >
+        <div className="md:p-12 py-8 px-3 md:min-w-[400px] rounded-2xl bg-white shadow md:shadow-2xl flex flex-col items-center justify-center" >
           <div
             className={"flex flex-row text-left justify-start text-[#07111D] font-semibold mb-8 text-xl md:text-2xl "}>
             تواصل معنا
@@ -205,7 +205,7 @@ export default function Home() {
               </div>
 
 
-              
+
             </div>
           </div>
           <div className={"flex flex-row mb-5"}>
@@ -221,169 +221,169 @@ export default function Home() {
       </section>
 
       {/* --- END CONTACT US --- */}
-              <div className={"w-full select-none "}>
-            <div
-                className={"relative w-full xl:h-screen mb-20  xl:mb-0 flex  flex-row justify-center bg-cover bg-no-repeat "} >
-                <div className={"absolute bg-slate-50 z-[1] bg-opacity-75 inset-0"} >
+      <div className={"w-full select-none "}>
+        <div
+          className={"relative w-full xl:h-screen mb-20  xl:mb-0 flex  flex-row justify-center bg-cover bg-no-repeat "} >
+          <div className={"absolute bg-slate-50 z-[1] bg-opacity-75 inset-0"} >
 
-                </div>
-                <div className={"absolute inset-0 z-[2] bg-no-repeat bg-cover  bg-[url('https://res.cloudinary.com/dqtlhm4to/image/upload/v1718392570/wfo4uvfgvircnkrplwkw.svg')]"} >
+          </div>
+          <div className={"absolute w-full inset-0 z-[2] bg-no-repeat bg-cover  bg-[url('https://res.cloudinary.com/dqtlhm4to/image/upload/v1718392570/wfo4uvfgvircnkrplwkw.svg')]"} >
 
-                </div>
-                <div className={"z-30 md:w-[1280px] w-full flex flex-col pt-0 md:pt-24 xl:pt-0 pb-0 md:pb-24 xl:pb-0 md:flex-row"}>
-                    <div className={"md:flex-1 ms-10 md:ms-0 mb-16 md:mb-0 flex flex-col pt-16 ps-10 xl:ps-0 md:pt-28"}>
-                        <div className={"flex flex-row justify-start text-left text-white font-semibold text-3xl xl:text-4xl mb-10"} >
-                            
-                        </div>
-                        
-                    </div>
-                    <div className={"md:flex-1  md:flex flex-col justify-center " }>
-                        <div className={"flex  flex-row justify-center md:px-16"} >
-                            <div className={"md:rounded-2xl md:shadow-lg w-full flex flex-col px-10 py-10 md:pb-14 bg-white flex-1"}>
+          </div>
+          <div className={"z-30 md:w-[1280px] w-full flex flex-col pt-0 md:pt-24 xl:pt-0 pb-0 md:pb-24 xl:pb-0 md:flex-row"}>
+            <div className={"md:flex-1 md:ms-10 md:ms-0 mb-16 md:mb-0 flex flex-col pt-16 md:ps-10 xl:ps-0 md:pt-28"}>
+              <div className={"flex flex-row justify-start text-left text-white font-semibold text-3xl xl:text-4xl mb-10"} >
 
-                                <div
-                                    className={"flex flex-row-reverse justify-start text-left text-black font-semibold text-2xl md:mb-10"}>
-                                    الملف الشخصي
-                                </div>
-                                <ConnectInput label={"الايميل"} placeholder={"example@gmail.com"} type={"email"} onChange={""} containerStyle={{marginBottom:16,paddingRight:40}}  />
-                                <div className={"flex flex-col md:flex-row md:space-x-4 md:me-10 "} >
-                                    <ConnectInput label={"اسم المؤسسة"} placeholder={"PodBrand"} onChange={""} type={"text"} containerStyle={{marginBottom:16}} />
-                                    <ConnectInput label={"نوع النشاط التجاري"} placeholder={"E-commerce"} onChange={""}  type={"text"} containerStyle={{marginBottom:16}} />
-                                </div>
-                                <ConnectInput label={"كلمة السر"} placeholder={"password"} type={"password"} onChange={""} containerStyle={{marginBottom:16,paddingRight:40}}  />
-                                
-                                <div className={"flex flex-row mt-3 justify-end"}>
-                                    <button
-                                        className={"flex flex-row rounded-full px-8 py-3 bg-black text-white text-[14px] font-medium transition ease-in  hover:bg-indigo-500 hover:text-white focus:ring focus:right-2 focus:ring-indigo-300 focus:bg-indigo-500 focus:text-white cursor-pointer "}>
-                                        ارسل 
-                                    </button>
-                                </div>
+              </div>
 
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
             </div>
+            <div className={"md:flex-1  md:flex flex-col justify-center "}>
+              <div className={"flex  flex-row justify-center md:px-16"} >
+                <div className={"md:rounded-2xl md:shadow-lg w-full flex flex-col md:px-10 py-10 md:pb-14 px-8 bg-white flex-1"}>
+
+                  <div
+                    className={"flex flex-row-reverse justify-start text-left text-black font-semibold text-2xl md:mb-10"}>
+                    الملف الشخصي
+                  </div>
+                  <ConnectInput label={"الايميل"} placeholder={"example@gmail.com"} type={"email"} onChange={""} containerStyle={{marginBottom:16}}  />
+                  <div className={"flex flex-col space-x-4 md:flex-row lg:me-10 "} >
+                    <ConnectInput label={"اسم المؤسسة"} placeholder={"PodBrand"} onChange={""} type={"text"} containerStyle={{marginBottom:16}} />
+                    <ConnectInput label={"نوع النشاط التجاري"} placeholder={"E-commerce"} onChange={""}  type={"text"} containerStyle={{marginBottom:16}} />
+                  </div>
+                  <ConnectInput label={"كلمة السر"} placeholder={"password"} type={"password"} onChange={""} containerStyle={{marginBottom:16,paddingRight:40}}  />
+
+                  <div className={"flex flex-row mt-3 justify-end"}>
+                    <button
+                      className={"flex flex-row rounded-full px-8 py-3 bg-black text-white text-[14px] font-medium transition ease-in  hover:bg-indigo-500 hover:text-white focus:ring focus:right-2 focus:ring-indigo-300 focus:bg-indigo-500 focus:text-white cursor-pointer "}>
+                      ارسل
+                    </button>
+                  </div>
+
+
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
       { /* --- FOOTER --- */}
       <div className={" flex bg-black flex-row justify-center w-full align-middle select-none"} >
-            <div className={"ps-4 xl:max-w-[1280px] w-full flex flex-col xl:px-3 pt-20 border-slate-200 pb-3  md:px-0"}>
-                <div className={"flex flex-col ps-3 md:p-0 justify-center md:flex-row"}>
+        <div className={"ps-4 xl:max-w-[1280px] w-full flex flex-col xl:px-3 pt-20 border-slate-200 pb-3  md:px-0"}>
+          <div className={"flex flex-col ps-3 md:p-0 justify-center md:flex-row"}>
 
-                    {/* --- left footer start --- */}
-                    <div className={"flex-1 flex flex-col ps-10"}>
-                        <div className={"flex flex-row mb-5"}>
-                            
-                            <img height={50} src="https://res.cloudinary.com/dqtlhm4to/image/upload/v1718314738/fre5teegghvhzqbj1sce.png" className="w-[44px] xl:w-[44px] h-[32px] me-4 xl:me-6 bg-cover bg-no-repeat  "/>
-                            
-                            <div className={"text-2xl font-semibold text-white"}>
-                                PodBrand
-                            </div>
-                        </div>
-                        <div className={"text-[16px] w-full lg:w-1/2 text-slate-200 font-semibold justify-start flex flex-row leading-8 mb-7"} >
-                        مؤسسة متخصصة في صناعة المحتوى السمعي التجاري
-                        </div>
-                        <div className={"flex flex-row justify-start mb-4 cursor-pointer"} >
-                            <FaLinkedin className={"w-[28px] h-[28px] me-5 transition ease-in text-white hover:text-blue-500 "} />
-                            <FaTwitterSquare className={"w-[28px] h-[28px] me-5 transition ease-in text-white hover:text-blue-500 "} />
-                            <FaFacebookSquare className={"w-[28px] h-[28px] me-5 transition ease-in text-white hover:text-blue-500 "} />
-                        </div>
-                        
-                        <div className={"mb-7"}>
+            {/* --- left footer start --- */}
+            <div className={"flex-1 flex flex-col ps-10"}>
+              <div className={"flex flex-row mb-5"}>
 
-                        </div>
-                    </div>
+                <img height={50} src="https://res.cloudinary.com/dqtlhm4to/image/upload/v1718314738/fre5teegghvhzqbj1sce.png" className="w-[44px] xl:w-[44px] h-[32px] me-4 xl:me-6 bg-cover bg-no-repeat  " />
 
-                    {/* --- left footer end --- */}
-                    {/* --- right footer start --- */}
-                    <div className={"flex-1 flex flex-col "}>
-                        <div className={"flex flex-row"}>
-                            <div className={"flex-1 flex flex-col"}>
-                                <div className={"text-white text-[16px] md:text-xl font-semibold mb-5"}>
-                                    Company
-                                </div>
-                                <div className={"text-slate-100 text-sm md:text-[16px] font-medium mb-2.5"}>
-                                    Home
-                                </div>
-                                <div className={"text-slate-100 text-sm md:text-[16px] font-medium mb-2.5"}>
-                                    About us
-                                </div>
-                                <div className={"text-slate-100 text-sm md:text-[16px] font-medium mb-2.5"}>
-                                    Careers
-                                </div>
-                                <div className={"text-slate-100 text-sm md:text-[16px] font-medium mb-2.5"}>
-                                    Press
-                                </div>
-                            </div>
-                            <div className={"flex-1 flex flex-col"}>
-                                <div className={"text-white text-[16px] md:text-xl font-semibold mb-5"}>
-                                    Product
-                                </div>
-                                <div className={"text-slate-100 text-sm md:text-[16px] font-medium mb-2.5"}>
-                                    Changelog
-                                </div>
-                                <div className={"text-slate-100 text-sm md:text-[16px] font-medium mb-2.5"}>
-                                    Integration
-                                </div>
-                                <div className={"text-slate-100 text-sm md:text-[16px] font-medium mb-2.5"}>
-                                    In Action
-                                </div>
-                                <div className={"text-slate-100 text-sm md:text-[16px] font-medium mb-2.5"}>
-                                    Status
-                                </div>
-                            </div>
-                            <div className={"flex-1 flex flex-col"}>
-                                <div className={"text-white text-[16px] md:text-xl font-semibold mb-5"}>
-                                    Resources
-                                </div>
-                                <div className={"text-slate-100 text-sm md:text-[16px] font-medium mb-2.5"}>
-                                    Privacy Policy
-                                </div>
-                                <div className={"text-slate-100 text-sm md:text-[16px] font-medium mb-2.5"}>
-                                    Security
-                                </div>
-                                <div className={"text-slate-100 text-sm md:text-[16px] font-medium mb-2.5"}>
-                                    Tutorials
-                                </div>
-                                <div className={"text-slate-100 text-sm md:text-[16px] font-medium mb-2.5"}>
-                                    Contact us
-                                </div>
-                            </div>
-                        </div>
-                        <div className={"mb-5"}>
-
-                        </div>
-                    </div>
+                <div className={"text-2xl font-semibold text-white"}>
+                  PodBrand
                 </div>
-                
-                { /* --- Appendix Footer --- */}
-                <div className={"w-full flex flex-col md:flex-row border-t-2 border-slate-200 py-5"}>
-                    <div className={"text-2xl font-semibold text-white text-center md:text-left"}>
-                        PodBrand
-                    </div>
-                    <div className={"flex-1"}>
+              </div>
+              <div className={"text-[16px] w-full lg:w-1/2 text-slate-200 font-semibold justify-start flex flex-row leading-8 mb-7"} >
+                مؤسسة متخصصة في صناعة المحتوى السمعي التجاري
+              </div>
+              <div className={"flex flex-row justify-start mb-4 cursor-pointer"} >
+                <FaLinkedin className={"w-[28px] h-[28px] me-5 transition ease-in text-white hover:text-blue-500 "} />
+                <FaTwitterSquare className={"w-[28px] h-[28px] me-5 transition ease-in text-white hover:text-blue-500 "} />
+                <FaFacebookSquare className={"w-[28px] h-[28px] me-5 transition ease-in text-white hover:text-blue-500 "} />
+              </div>
 
-                    </div>
-                    <div className={"flex flex-col-reverse mt-2 md:mt-0 md:flex-1 md:flex-row"} >
+              <div className={"mb-7"}>
 
-                        <div
-                            className={"text-slate-100 mt-6 md:mt-0 text-sm font-normal text-center mx-4 justify-center align-middle flex flex-col"}>
-                            @ Copyrights , all rights reserved for 2024
-                        </div>
-                        <div className={"flex flex-row mt-6 md:mt-0 "} >
-                            <div
-                                className={"text-white flex-1 text-center text-lg font-semibold mx-2 justify-center align-middle flex flex-col cursor-pointer transition ease-in  hover:text-blue-500"}>
-                                Privacy
-                            </div>
-                            <div className={"text-white flex-1 text-center text-lg font-semibold mx-2 justify-center align-middle flex flex-col cursor-pointer transition ease-in  hover:text-blue-500"}>
-                                Terms
-                            </div>
-                        </div>
-                    </div>
-                </div>
+              </div>
             </div>
+
+            {/* --- left footer end --- */}
+            {/* --- right footer start --- */}
+            <div className={"flex-1 flex flex-col "}>
+              <div className={"flex flex-row"}>
+                <div className={"flex-1 flex flex-col"}>
+                  <div className={"text-white text-[16px] md:text-xl font-semibold mb-5"}>
+                    Company
+                  </div>
+                  <div className={"text-slate-100 text-sm md:text-[16px] font-medium mb-2.5"}>
+                    Home
+                  </div>
+                  <div className={"text-slate-100 text-sm md:text-[16px] font-medium mb-2.5"}>
+                    About us
+                  </div>
+                  <div className={"text-slate-100 text-sm md:text-[16px] font-medium mb-2.5"}>
+                    Careers
+                  </div>
+                  <div className={"text-slate-100 text-sm md:text-[16px] font-medium mb-2.5"}>
+                    Press
+                  </div>
+                </div>
+                <div className={"flex-1 flex flex-col"}>
+                  <div className={"text-white text-[16px] md:text-xl font-semibold mb-5"}>
+                    Product
+                  </div>
+                  <div className={"text-slate-100 text-sm md:text-[16px] font-medium mb-2.5"}>
+                    Changelog
+                  </div>
+                  <div className={"text-slate-100 text-sm md:text-[16px] font-medium mb-2.5"}>
+                    Integration
+                  </div>
+                  <div className={"text-slate-100 text-sm md:text-[16px] font-medium mb-2.5"}>
+                    In Action
+                  </div>
+                  <div className={"text-slate-100 text-sm md:text-[16px] font-medium mb-2.5"}>
+                    Status
+                  </div>
+                </div>
+                <div className={"flex-1 flex flex-col"}>
+                  <div className={"text-white text-[16px] md:text-xl font-semibold mb-5"}>
+                    Resources
+                  </div>
+                  <div className={"text-slate-100 text-sm md:text-[16px] font-medium mb-2.5"}>
+                    Privacy Policy
+                  </div>
+                  <div className={"text-slate-100 text-sm md:text-[16px] font-medium mb-2.5"}>
+                    Security
+                  </div>
+                  <div className={"text-slate-100 text-sm md:text-[16px] font-medium mb-2.5"}>
+                    Tutorials
+                  </div>
+                  <div className={"text-slate-100 text-sm md:text-[16px] font-medium mb-2.5"}>
+                    Contact us
+                  </div>
+                </div>
+              </div>
+              <div className={"mb-5"}>
+
+              </div>
+            </div>
+          </div>
+
+          { /* --- Appendix Footer --- */}
+          <div className={"w-full flex flex-col md:flex-row border-t-2 border-slate-200 py-5"}>
+            <div className={"text-2xl font-semibold text-white text-center md:text-left"}>
+              PodBrand
+            </div>
+            <div className={"flex-1"}>
+
+            </div>
+            <div className={"flex flex-col-reverse mt-2 md:mt-0 md:flex-1 md:flex-row"} >
+
+              <div
+                className={"text-slate-100 mt-6 md:mt-0 text-sm font-normal text-center mx-4 justify-center align-middle flex flex-col"}>
+                @ Copyrights , all rights reserved for 2024
+              </div>
+              <div className={"flex flex-row mt-6 md:mt-0 "} >
+                <div
+                  className={"text-white flex-1 text-center text-lg font-semibold mx-2 justify-center align-middle flex flex-col cursor-pointer transition ease-in  hover:text-blue-500"}>
+                  Privacy
+                </div>
+                <div className={"text-white flex-1 text-center text-lg font-semibold mx-2 justify-center align-middle flex flex-col cursor-pointer transition ease-in  hover:text-blue-500"}>
+                  Terms
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
   );
 }
