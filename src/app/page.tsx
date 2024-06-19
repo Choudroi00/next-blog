@@ -245,7 +245,7 @@ export default function Home() {
                     className={"flex flex-row-reverse justify-start text-left text-black font-semibold text-2xl md:mb-10"}>
                     الملف الشخصي
                   </div>
-                  <ConnectInput label={"الايميل"} placeholder={"example@gmail.com"} type={"email"} onChange={""} containerStyle={{marginBottom:16}}  />
+                  <ConnectInput label={"الايميل"} placeholder={"example@gmail.com"} type={"email"} onChange={""} containerStyle={{marginBottom:16,marginTop:16}}  />
                   <div className={"flex flex-col space-x-4 md:flex-row lg:me-10 "} >
                     <ConnectInput label={"اسم المؤسسة"} placeholder={"PodBrand"} onChange={""} type={"text"} containerStyle={{marginBottom:16}} />
                     <ConnectInput label={"نوع النشاط التجاري"} placeholder={"E-commerce"} onChange={""}  type={"text"} containerStyle={{marginBottom:16}} />
