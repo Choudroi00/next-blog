@@ -175,7 +175,7 @@ export default function Home() {
 
       {/* --- END HOW TO START --- */}
       <section className="py-20 w-full flex flex-row justify-center" >
-        <div className="p-12 min-w-[400px] rounded-2xl bg-white shadow-2xl flex flex-col items-center justify-center" >
+        <div className="p-12 min-w-[400px] rounded-2xl bg-white shadow md:shadow-2xl flex flex-col items-center justify-center" >
           <div
             className={"flex flex-row text-left justify-start text-[#07111D] font-semibold mb-8 text-xl md:text-2xl "}>
             تواصل معنا
@@ -230,7 +230,7 @@ export default function Home() {
                 <div className={"absolute inset-0 z-[2] bg-no-repeat bg-cover  bg-[url('https://res.cloudinary.com/dqtlhm4to/image/upload/v1718392570/wfo4uvfgvircnkrplwkw.svg')]"} >
 
                 </div>
-                <div className={"z-30 w-[1280px] flex flex-col pt-0 md:pt-24 xl:pt-0 pb-0 md:pb-24 xl:pb-0 md:flex-row"}>
+                <div className={"z-30 md:w-[1280px] w-full flex flex-col pt-0 md:pt-24 xl:pt-0 pb-0 md:pb-24 xl:pb-0 md:flex-row"}>
                     <div className={"md:flex-1 ms-10 md:ms-0 mb-16 md:mb-0 flex flex-col pt-16 ps-10 xl:ps-0 md:pt-28"}>
                         <div className={"flex flex-row justify-start text-left text-white font-semibold text-3xl xl:text-4xl mb-10"} >
                             
